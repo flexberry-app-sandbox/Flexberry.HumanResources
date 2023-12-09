@@ -1,0 +1,77 @@
+﻿{
+  "name": "IISHumanResourcesPerson",
+  "modelName": "i-i-s-human-resources-person",
+  "className": "Person",
+  "nameSpace": "IIS.HumanResources",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": false,
+      "name": "position",
+      "relatedTo": "i-i-s-human-resources-person-position",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "company",
+      "relatedTo": "i-i-s-human-resources-company",
+      "inverse": "staff"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "PersonE",
+      "modelName": "i-i-s-human-resources-person",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Name",
+          "lookupValueField": "name",
+          "relationName": "Position",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Position",
+          "name": "position",
+          "relatedTo": "i-i-s-human-resources-person-position",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

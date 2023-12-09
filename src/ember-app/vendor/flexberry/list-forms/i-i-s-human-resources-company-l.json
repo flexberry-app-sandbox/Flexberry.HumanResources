@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-human-resources-company-e",
+  "editForm": "i-i-s-human-resources-company-e",
+  "external": false,
+  "caption": "Company",
+  "name": "IISHumanResourcesCompanyL",
+  "className": "CompanyL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-human-resources-company",
+      "modelProjection": "CompanyL"
+    }
+  ]
+}

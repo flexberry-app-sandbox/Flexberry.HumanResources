@@ -1,0 +1,29 @@
+﻿{
+  "applicationCaption": "Human resources",
+  "applicationTitle": "Human resources",
+  "items": [
+    {
+      "link": null,
+      "menuName": "human-resources",
+      "caption": "HumanResources",
+      "title": "HumanResources",
+      "children": [
+        {
+          "link": "i-i-s-human-resources-company-l",
+          "menuName": null,
+          "caption": "Company",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-human-resources-person-position-l",
+          "menuName": null,
+          "caption": "Person position",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Person position",
+  "name": "IISHumanResourcesPersonPositionE",
+  "className": "PersonPositionE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-human-resources-person-position",
+      "modelProjection": "PersonPositionE"
+    }
+  ]
+}

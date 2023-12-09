@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-human-resources-person-position-e",
+  "editForm": "i-i-s-human-resources-person-position-e",
+  "external": false,
+  "caption": "Person position",
+  "name": "IISHumanResourcesPersonPositionL",
+  "className": "PersonPositionL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-human-resources-person-position",
+      "modelProjection": "PersonPositionL"
+    }
+  ]
+}

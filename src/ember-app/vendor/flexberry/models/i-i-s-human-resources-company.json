@@ -1,0 +1,68 @@
+﻿{
+  "name": "IISHumanResourcesCompany",
+  "modelName": "i-i-s-human-resources-company",
+  "className": "Company",
+  "nameSpace": "IIS.HumanResources",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "staff",
+      "relatedTo": "i-i-s-human-resources-person",
+      "inverse": "company"
+    }
+  ],
+  "projections": [
+    {
+      "name": "CompanyE",
+      "modelName": "i-i-s-human-resources-company",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "PersonE",
+          "caption": "Staff",
+          "name": "staff",
+          "relatedTo": "i-i-s-human-resources-person",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "CompanyL",
+      "modelName": "i-i-s-human-resources-company",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

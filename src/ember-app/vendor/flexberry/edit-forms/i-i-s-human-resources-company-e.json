@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": "position",
+      "displayAttributeName": "name",
+      "required": false,
+      "relationName": "Staff.Position",
+      "projection": "PersonPositionL",
+      "detailModelName": "i-i-s-human-resources-person"
+    }
+  ],
+  "external": false,
+  "caption": "Company",
+  "name": "IISHumanResourcesCompanyE",
+  "className": "CompanyE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-human-resources-company",
+      "modelProjection": "CompanyE"
+    }
+  ]
+}
